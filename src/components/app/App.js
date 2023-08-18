@@ -1,10 +1,20 @@
-import './App.css';
+import 'reset-css'
+import Header from '../header/Header';
+import Slider from '../slider/Slider';
+import AboutCompany from '../aboutCompany/AboutCompany';
+
+import './App.scss';
+
 
 function App() {
   return (
-   <>
-   hello
-   </>
+   <div className="app">
+    <Header/>
+    <Slider/>
+    <AboutCompany/>
+   </div>
+
+
   );
 }
 

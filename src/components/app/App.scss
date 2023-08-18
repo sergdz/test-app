@@ -1,0 +1,23 @@
+@import '../style/variables.scss';
+@font-face {
+  font-family: TTHoves ;
+  src: url('../fonts/TTHoves-Regular.ttf');
+}
+
+html {
+  box-sizing: border-box;
+
+}
+
+*, *::before, *::after {
+  box-sizing:inherit
+}
+
+
+
+
+
+.app {
+  font-family: TTHoves, sans-serif ;
+  font-weight: 400;
+}

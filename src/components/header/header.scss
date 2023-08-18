@@ -1,0 +1,35 @@
+@import '../style/variables.scss';
+
+.app {
+    &__header {
+        display: flex;
+        height: 102px;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__logo {
+        margin-left: 9%;
+        width: 68.55px;
+        height: 54px;
+    }
+
+    &__menu {
+        display: flex;
+        margin-right: 17%;
+        height: 20px;
+        width: 48%;
+        justify-content: space-around;
+
+        &_item {
+
+            text-decoration: none;
+            color: $textColor;
+            font-size: 16px;
+            line-height: 12px;
+            letter-spacing: 2px;
+
+
+        }
+    }
+}
