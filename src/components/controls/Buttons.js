@@ -1,15 +1,8 @@
-import Arrows from "./Arrows";
+import Arrows from "./controls";
 const Buttons = (props) => {
-    const {color, text, arrow} = props;
-    const componentStyle = {
-        backgroundColor: color,
-        padding: '10px'
-    }
+    const {color, arrow} = props;
     return (
-        <button className="app__button" style={componentStyle}>
-            <div className="app__button-text">
-                {text}
-            </div>
+        <button>
             <Arrows arrow={arrow}/>
         </button>
     )
