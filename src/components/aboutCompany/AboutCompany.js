@@ -22,7 +22,29 @@ const AboutCompany = () => {
                     placeat ducimus cumque molestias, nemo, voluptate voluptatem! Odio consequatur,
                     id a libero necessitatibus ipsa dolores perspiciatis.
                 </p>
-                <Buttons  arrow={'right'} color={'white'} text={'Читать'} />
+                <Buttons arrow={'right'} color={'white'} text={'Читать'} />
+            </div>
+
+            <h2>Основные задачи</h2>
+            <div >
+                <div>
+                    <h3>
+                        2
+                    </h3>
+                    <p>
+                        Создание комфортных условий и повышение качества обслуживания клиентов
+
+                    </p>
+                </div>
+                <div>
+                    <h3>
+                        2
+                    </h3>
+                    <p>
+                        Постоянно совершенствовать качество предоставляемых услуг путем обучения персонала, закупки нового оборудования и усиленной рекламы на рынке
+                    </p>
+                </div>
+
             </div>
         </div>
     )

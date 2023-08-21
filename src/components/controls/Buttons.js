@@ -1,8 +1,11 @@
 import Arrows from "./Arrows";
+
+
 const Buttons = (props) => {
-    const {color, text, arrow} = props;
+    const {color, bgColor, text, arrow} = props;
     const componentStyle = {
-        backgroundColor: color,
+        backgroundColor: bgColor,
+        color: color,
         padding: '20px'
     }
     return (
@@ -10,7 +13,7 @@ const Buttons = (props) => {
             <div className="app__button-text">
                 {text}
             </div>
-            <Arrows arrow={arrow}/>
+            <Arrows arrow={arrow} color={color} />
         </button>
     )
 }
