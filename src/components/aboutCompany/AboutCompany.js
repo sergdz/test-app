@@ -1,7 +1,7 @@
 import img from '../img/Rectangle9.jpg';
 import img1 from '../img/Rectangle8.jpg';
 import img2 from '../img/Rectangle10.jpg';
-import Buttons from '../controls/Buttons';
+import Buttons from '../controls/Buttons.js';
 
 const AboutCompany = () => {
     return (
