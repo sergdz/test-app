@@ -4,13 +4,30 @@ import logo from '../img/logo.jpg';
 const Header = () => {
     return (
         <header className='app__header'>
-            <img className='app__logo'  src={logo} alt="Логотип" />
+            <img className='app__logo' src={logo} alt="Логотип" />
             <ul className='app__menu'>
-                <li className="app__menu_item">Главная</li>
-                <li className="app__menu_item">Галерея</li>
-                <li className="app__menu_item">Проекты</li>
-                <li className="app__menu_item">Сертификаты</li>
-                <li className="app__menu_item">Контакты</li>
+                <li className="app__menu_item">
+                    <a href="">
+                        Главная
+                    </a>
+                </li>
+                <li className="app__menu_item">
+                    <a className="app__menu_item-link" href="">
+                        Галерея
+                    </a>
+                </li>
+                <li className="app__menu_item">
+                    <a href="">
+                        Проекты</a>
+                </li>
+                <li className="app__menu_item"><
+                    a href="">
+                    Сертификаты</a>
+                </li>
+                <li className="app__menu_item">
+                    <a href="">
+                        Контакты</a>
+                </li>
             </ul>
         </header>
     )

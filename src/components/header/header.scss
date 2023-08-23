@@ -30,6 +30,25 @@
             letter-spacing: 2px;
 
 
+
+
         }
+
+
+
+        &_item :hover {
+
+            border-block-start: 2px  solid $textColor;
+            border-block-end: 2px  solid $textColor;
+
+
+        }
+
+
+
+
+
     }
+
+
 }

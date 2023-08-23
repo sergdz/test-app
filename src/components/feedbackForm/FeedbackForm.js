@@ -1,4 +1,5 @@
 import Buttons from "../controls/Buttons"
+import imgForm from '../img/image12.jpg'
 const FeedbackForm = () => {
     return (
         <>
@@ -18,7 +19,10 @@ const FeedbackForm = () => {
                 с политикой
                 конфиденциальности
             </label>
-            <Buttons color={'white'} bgColor={'black'} arrow={'right'}  text={'Отправить'}/>
+            <Buttons color={'white'} bgColor={'black'} arrow={'right'} text={'Отправить'} />
+            <div className="app__feedback-form-img">
+                <img src={imgForm} alt="Мужчина с телефоном" />
+            </div>
 
         </>
 
