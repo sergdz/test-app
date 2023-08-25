@@ -3,6 +3,7 @@
 .app {
     &__slider {
         display: flex;
+
         justify-content: space-evenly;
 
         &-img {
@@ -11,14 +12,17 @@
             & img {
                 width: 846px;
                 height: 916px;
+
             }
+
+
         }
 
         &-img::before {
             content: '';
             position: absolute;
             top: 69.2%;
-            right: 100%;
+            right: 100%;/*  */
             border-top: 2px solid #F2F2F2;
             width: 34.8%;
         }
@@ -33,7 +37,9 @@
             letter-spacing: 5px;
             line-height: 82px;
             justify-content: center;
+            align-content: center;
             align-items: center;
+
         }
 
         &-item {
@@ -50,9 +56,9 @@
         }
 
         &-title {
+            width: 244px;
             color: $textColor;
             font-weight: bolder;
-            width: 20%;
             font-size: 70px;
             text-transform: uppercase;
             line-height: 62px;
@@ -66,8 +72,8 @@
         &-arrow {
             display: flex;
             justify-content: flex-start;
-            flex-direction: row;
             width: 75px;
+
 
             &>div {
                 padding: 20px;
@@ -78,6 +84,13 @@
                     background-color: $buttonColor1;
                 }
             }
-        }
+            }
+
+
+
+
+
+
     }
+
 }

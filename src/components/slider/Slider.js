@@ -23,7 +23,7 @@ const Slider = () => {
             </div>
 
           </div>
-          <div className="1">
+          <div className="app__slider-number">
             <p>1</p>
             <p>2</p>
           </div>
