@@ -3,21 +3,21 @@
 .app {
     &__header {
         display: flex;
-        height: 102px;
+        height: 108px;
         justify-content: space-between;
         align-items: center;
     }
 
     &__logo {
         margin-left: 9%;
-        width: 68.55px;
+        width: 5%;
         height: 54px;
     }
 
     &__menu {
         display: flex;
         margin-right: 17%;
-        height: 20px;
+        height: 28px;
         width: 48%;
         justify-content: space-around;
 
@@ -38,8 +38,8 @@
 
         &_item :hover {
 
-            border-block-start: 2px  solid $textColor;
-            border-block-end: 2px  solid $textColor;
+            border-block-start: 2px solid $textColor;
+            border-block-end: 2px solid $textColor;
 
 
         }
