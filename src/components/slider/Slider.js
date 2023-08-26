@@ -24,8 +24,15 @@ const Slider = () => {
 
           </div>
           <div className="app__slider-number">
-            <p>1</p>
-            <p>2</p>
+            <p className='app__slider-number-item'>01</p>
+
+              <svg width="60" height="50">
+                <rect x="56" y="60" width="2" height="150 " fill="#E0E0E0" transform="rotate(45 100 0)" />
+              </svg>
+
+
+
+            <p className='app__slider-number-item'>02</p>
           </div>
 
 

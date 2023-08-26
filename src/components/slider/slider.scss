@@ -22,7 +22,8 @@
             content: '';
             position: absolute;
             top: 69.2%;
-            right: 100%;/*  */
+            right: 100%;
+            /*  */
             border-top: 2px solid #F2F2F2;
             width: 34.8%;
         }
@@ -30,6 +31,8 @@
         &-button {
             display: flex;
             font-size: 15px;
+            border: none;
+            cursor: pointer;
             width: 30%;
             position: absolute;
             left: 0;
@@ -72,9 +75,7 @@
         &-arrow {
             display: flex;
             justify-content: flex-start;
-            width: 75px;
-
-
+            cursor: pointer;
             &>div {
                 padding: 20px;
                 margin-right: 29px;
@@ -84,13 +85,25 @@
                     background-color: $buttonColor1;
                 }
             }
+        }
+
+        &-number {
+            display: flex;
+            font-size: 24px;
+
+            &-item {
+                color:$textColor1;
+                margin-right: 57px;
+                line-height: 48px;
             }
-
-
-
-
-
+        }
 
     }
 
+
+
+
+
+
 }
+
