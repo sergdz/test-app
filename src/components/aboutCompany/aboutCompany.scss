@@ -1,0 +1,65 @@
+@import '../style/variables.scss';
+
+.app {
+    &__about {
+        display: flex;
+        background-color: $aboutColorBlock;
+        justify-content: space-evenly;
+        padding-left: 20px;
+        width: 81%;
+        margin: 0 auto;
+
+        &-img {
+            display: flex;
+            align-items: flex-start;
+            flex-direction: row-reverse;
+
+            &-first {
+                margin-top: 42px;
+            }
+
+            &-second {
+                margin-bottom: -60px;
+                height: 20%;
+            }
+
+            & img {
+                margin: 30px;
+                width: 92%;
+            }
+        }
+
+        &-text {
+            width: 35.5%;
+            font-size: 16px;
+            line-height: 25px;
+
+            &-title {
+                font-size: 64px;
+                padding-top: 54px;
+                margin-bottom: 50px;
+                letter-spacing: 2px;
+
+            }
+
+            &-subtext {
+                width: 85%;
+                margin-bottom: 23px;
+                letter-spacing: 0px;
+                line-height: 29px;
+            }
+        }
+
+        &-button {
+            font-size: 15px;
+            cursor: pointer;
+            width: 56%;
+            letter-spacing: 4px;
+            line-height: 70px;
+            justify-content: center;
+            align-content: center;
+            align-items: center;
+        }
+
+    }
+}

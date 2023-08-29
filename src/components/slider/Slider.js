@@ -41,7 +41,7 @@ const Slider = () => {
 
         <div className="app__slider-img">
           <img src={img} />
-          <Buttons arrow={'right'} color={'black'} bgColor={'white'} text={'Взглянуть'} className={'slider'} />
+          <Buttons arrow={'right'} bgColor={'white'} text={'Взглянуть'} className={'slider'} />
 
         </div>
 

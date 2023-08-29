@@ -2,50 +2,36 @@ import img from '../img/Rectangle9.jpg';
 import img1 from '../img/Rectangle8.jpg';
 import img2 from '../img/Rectangle10.jpg';
 import Buttons from '../controls/Buttons.js';
+import { textColor } from '../style/variables.scss'
+
+import './aboutCompany.scss';
 
 const AboutCompany = () => {
     return (
         <div className="app__about">
-            <img className="app__about-img" src={img} alt="" />
-            <img className="app__about-img" src={img1} alt="" />
-            <img className="app__about-img" src={img2} alt="" />
+            <div className="app__about-img">
+                <div className="app__about-img-first">
+                    <img className="app__about-img" src={img} alt="" />
+
+                </div>
+                <div className="app__about-img-second ">
+                    <img className="app__about-img" src={img1} alt="" />
+                    <img className="app__about-img" src={img2} alt="" />
+
+                </div>
+            </div>
+
 
             <div className="app__about-text">
                 <h2 className="app__about-text-title"> О компании</h2>
                 <p className="app__about-text-subtext">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Dolorum rem ducimus architecto quia cupiditate magni tempora
-                    dolore voluptates, suscipit assumenda facere repudiandae! Molestiae
-                    illo voluptas minus nulla omnis perferendis. Porro ullam ipsam rerum
-                    facere, rem quas deleniti, facilis excepturi, doloremque cupiditate error
-                    saepe totam? Quia dolor harum natus nam sunt maiores aut voluptatibus quo
-                    placeat ducimus cumque molestias, nemo, voluptate voluptatem! Odio consequatur,
-                    id a libero necessitatibus ipsa dolores perspiciatis.
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
                 </p>
-                <Buttons arrow={'right'} color={'white'} text={'Читать'} />
+                <Buttons arrow={'right'} bgColor={'white'} className={'about'} color={'#333333'} text={'Читать'} />
             </div>
 
-            <h2>Основные задачи</h2>
-            <div >
-                <div>
-                    <h3>
-                        2
-                    </h3>
-                    <p>
-                        Создание комфортных условий и повышение качества обслуживания клиентов
 
-                    </p>
-                </div>
-                <div>
-                    <h3>
-                        2
-                    </h3>
-                    <p>
-                        Постоянно совершенствовать качество предоставляемых услуг путем обучения персонала, закупки нового оборудования и усиленной рекламы на рынке
-                    </p>
-                </div>
 
-            </div>
         </div>
     )
 }

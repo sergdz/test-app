@@ -2,18 +2,32 @@ import Arrows from "./Arrows";
 
 
 const Buttons = (props) => {
-    const {color, bgColor, text, arrow, className} = props;
+    // Деструктуризация пропсов для удобства использования внутри компонента.
+    const {bgColor, text, arrow, className} = props;
+
+    // Создание стиля для кнопки с заданным цветом фона и текста.
     const componentStyle = {
+        display: 'flex',
+        border: 'none',
         backgroundColor: bgColor,
-        color: color,
     }
+
     return (
+        // Возвращается JSX элемент кнопки, с применением класса и стилей.
         <button className={`app__${className}-button`} style={componentStyle}>
+            {/* Внутри кнопки содержится блок с текстом кнопки. */}
             <div className="app__button-text">
                 {text}
             </div>
-            <Arrows arrow={arrow} color={color} />
+            {/* Вставка компонента Arrows с передачей параметров arrow и color. */}
+            <Arrows arrow={arrow}  />
         </button>
     )
 }
+
+
+
+
+
+
 export default Buttons
