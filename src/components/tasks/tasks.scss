@@ -1,0 +1,43 @@
+@import '..//style/variables.scss';
+@font-face {
+    font-family: SFProDisplay;
+    src: url('../fonts//SF-Pro-Display-Black.otf');
+}
+.app {
+    &__task {
+        display: flex;
+        flex-direction: column;
+        width: 81%;
+        margin:  0 auto;
+        margin-bottom: 110px;
+        &-title {
+            font-size: 64px;
+            color:$textColor1;
+            letter-spacing: 4px;
+
+        }
+
+        &-item{
+            display:flex;
+            justify-content: space-between;
+
+        }
+        &-sub-item {
+            display:flex;
+            padding-top: 49px;
+            width: 48%;
+        }
+        &-number {
+            font-size: 200px;
+            font-family: SFProDisplay;
+            color:$buttonColor1;
+        }
+        &-description {
+            font-size: 22px;
+            color: $textColor;
+            margin: 5%;
+            line-height: 36px;
+            font-weight: 600;
+        }
+    }
+}

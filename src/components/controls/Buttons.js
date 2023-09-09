@@ -1,30 +1,49 @@
 import Arrows from "./Arrows";
 
-
 const Buttons = (props) => {
-    // Деструктуризация пропсов для удобства использования внутри компонента.
-    const {bgColor, text, arrow, className} = props;
+    const { color, bgColor, text, arrow, className } = props;
 
-    // Создание стиля для кнопки с заданным цветом фона и текста.
     const componentStyle = {
         display: 'flex',
-        border: 'none',
+        color: color,
+        width: '250px',
+        height: '76px',
+        fontSize: '12px',
+        lineHeight: '12px',
+        letterSpacing: '7px',
+        textTransform: 'uppercase',
+        cursor: 'pointer',
         backgroundColor: bgColor,
+        border: 'none',
+        justifyContent: 'center',
+        alignContent: 'center',
+        alignItems: 'center',
+
+
     }
 
+    // Добавляем медиа-запросы для адаптации стилей кнопки на разных экранах.
+    const responsiveStyles = {
+        '@media (max-width: 768px)': {
+            // Ваши стили для экранов шириной до 768px
+            backgroundColor: 'lightblue',
+        },
+        '@media (max-width: 480px)': {
+            // Ваши стили для экранов шириной до 480px
+            backgroundColor: 'lightpink',
+        },
+        // Другие медиа-запросы
+    };
+
     return (
-        // Возвращается JSX элемент кнопки, с применением класса и стилей.
-        <button className={`app__${className}-button`} style={componentStyle}>
-            {/* Внутри кнопки содержится блок с текстом кнопки. */}
+        <button className={`app__${className}-button`} style={{ ...componentStyle, ...responsiveStyles }}>
             <div className="app__button-text">
                 {text}
             </div>
-            {/* Вставка компонента Arrows с передачей параметров arrow и color. */}
-            <Arrows arrow={arrow}  />
+            <Arrows arrow={arrow} />
         </button>
     )
 }
-
 
 
 

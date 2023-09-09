@@ -30,19 +30,9 @@
         }
 
         &-button {
-            display: flex;
-            color:$textColor;
-            font-size: 15px;
-            cursor: pointer;
-            width: 30%;
             position: absolute;
             left: 0;
             bottom: 0;
-            letter-spacing: 5px;
-            line-height: 82px;
-            justify-content: center;
-            align-content: center;
-            align-items: center;
 
         }
 

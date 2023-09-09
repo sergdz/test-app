@@ -1,0 +1,59 @@
+@import '../style/variables.scss';
+
+.app {
+    &__portfolio {
+        display: flex;
+        flex-direction: column;
+        margin-left: 9.4%;
+        max-width: 85%;
+
+        &-title {
+            font-size: 64px;
+            color: $textColor1;
+            margin-left: 3px;
+            letter-spacing: 4px;
+            margin-bottom: 72px;
+        }
+
+        &-block {
+            display: flex;
+            margin-bottom: 33px;
+
+
+
+
+            &-item {
+                font-size: 71px;
+                position: relative;
+                width: 46.5%;
+                height: 281px;
+                margin-right: 2.7%;
+
+            }
+
+            & img {
+                object-fit: cover;
+                height: 100%;
+
+            }
+
+            & .size-small{
+                font-size: 34px;
+                position: relative;
+                height: 281px;
+                margin-right: 2.8%;
+            }
+        }
+
+        &-button-wrapper {
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        &-button {
+
+            margin-right: 4%;
+
+        }
+     }
+}

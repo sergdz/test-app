@@ -1,10 +1,6 @@
-import imgPortfolioPage from '../img/image15.jpg'
 const ProjectPage = () => {
     return (
-        <div>
-
-            <img src={imgPortfolioPage} alt="" />
-        </div>
+        <div className="s"></div>
     )
 }
 export default ProjectPage

@@ -6,6 +6,19 @@
         height: 108px;
         justify-content: space-between;
         align-items: center;
+
+        & .hamburger-menu {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            &-item {
+                border: 1px solid black;
+                width: 20px;
+                margin-bottom: 2px;
+            }
+
+        }
     }
 
     &__logo {
@@ -15,7 +28,7 @@
     }
 
     &__menu {
-        display: flex;
+        display: none;
         margin-right: 17%;
         height: 28px;
         width: 48%;
