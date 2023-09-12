@@ -24,16 +24,20 @@ const Buttons = (props) => {
 
     // Добавляем медиа-запросы для адаптации стилей кнопки на разных экранах.
     const responsiveStyles = {
-        '@media (max-width: 768px)': {
-            // Ваши стили для экранов шириной до 768px
-            backgroundColor: 'lightblue',
+        '@media (maxWidth: 768px)': {
+          backgroundColor: 'lightblue', // Стили для экранов шириной до 768px
         },
-        '@media (max-width: 480px)': {
-            // Ваши стили для экранов шириной до 480px
-            backgroundColor: 'lightpink',
+        '@media (maxWidth: 480px)': {
+          backgroundColor: 'lightpink', // Стили для экранов шириной до 480px
         },
         // Другие медиа-запросы
-    };
+      };
+
+
+
+
+
+
 
     return (
         <button className={`app__${className}-button`} style={{ ...componentStyle, ...responsiveStyles }}>

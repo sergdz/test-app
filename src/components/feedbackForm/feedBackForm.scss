@@ -1,0 +1,90 @@
+@import '../style/variables.scss';
+
+.app {
+    &__feedback-form {
+        margin-bottom: 10%;
+        &__title {
+            color: $textColor1;
+            width: 40%;
+            font-size: 72px;
+            margin-left: 9%;
+            margin-bottom: 30px;
+        }
+
+        &_block {
+            display: flex;
+        }
+
+        &__fieldset {
+            display: flex;
+            flex-direction: column;
+            margin-right: 1.9%;
+            width: 31%;
+            line-height: 76px;
+            margin-left: 5.9%;
+            margin-bottom: 1%;
+
+        }
+
+
+        &__textarea {
+            display: flex;
+            background-color: #F3F3F3;
+            margin-left: 12%;
+            margin-bottom: 6px;
+            height: 55px;
+            padding-left: 4%;
+            padding-top: 3%;
+            letter-spacing: 2px;
+            resize: none;
+            border: none;
+
+
+            &:last-of-type {
+                height: 163px;
+            }
+
+            &--required {
+                &::placeholder::before {
+                    content: '*';
+                }
+
+            }
+        }
+
+        &-img {
+            object-fit: cover;
+
+            & img {
+                height: 100%;
+            }
+        }
+
+
+
+        &.privacy-policy-checkbox {
+            width: 20px;
+            height: 20px;
+            margin-left: 9%;
+            margin-bottom: 2.4%;
+
+            + label {
+                display: block;
+                margin-left: 2%;
+                width: 30%;
+            }
+
+
+
+
+        }
+
+        &_checkbox {
+            display: flex;
+        }
+
+        &-button {
+            margin-left: 9.3%;
+        }
+    }
+}
