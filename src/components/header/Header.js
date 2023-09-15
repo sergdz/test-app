@@ -6,11 +6,7 @@ const Header = () => {
         <header className='app__header'>
             <img className='app__logo' src={logo} alt="Логотип" />
 
-                <div className="app__header hamburger-menu">
-                    <div className="hamburger-menu-item"></div>
-                    <div className="hamburger-menu-item"></div>
-                    <div className="hamburger-menu-item"></div>
-                </div>
+
 
             <ul className='app__menu'>
                 <li className="app__menu_item">

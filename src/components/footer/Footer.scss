@@ -1,20 +1,107 @@
-.footer {
+.app {
+  &__footer {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    padding-top: 4.5%;
+    padding-left: 4.9%;
+    padding-right: 2.9%;
+    height: 500px;
+    background-color: black;
+    text-decoration: none;
+
+    &__block {
+
+      &-logo {
+        height: auto;
+        object-fit: contain;
+      }
+    }
+
+    &-list {
+      width: 20%;
+      margin-left: 8%;
+
+      color: white;
+
+      &.info {
+        padding-left: 1%;
+        line-height: 24px;
+      }
+
+      &.contact {
+        margin-left: 0;
+        width: 27.9%;
+        margin-bottom: 20%;
+
+        strong {
+          margin-bottom: 7%;
+        }
+
+        li {
+          letter-spacing: 1px;
+
+          .app__footer-icon {
+
+            margin-right: 20px;
+
+          }
+        }
+
+      }
+
+      &.media {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+
+        p {
+          letter-spacing: 2px;
+          margin-bottom: 5%;
+        }
+
+        ul {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+          li {
+            margin-left: 100%;
+          }
+        }
+      }
+
+      &-address {
+
+        &.offset {
+
+          margin-bottom: 16%;
+        }
+      }
+
+      &-phone {
+
+        &.offset {
+
+          margin-bottom: 14%;
+        }
+      }
+
+      li {
+        display: block;
+        margin-bottom: 20px;
+
+        a {
+          color: white;
+        }
+      }
+
+      strong {
+        display: block;
+        font-weight: bolder;
+        margin-bottom: 10px;
+      }
+
+    }
   }
 
-  .footer-list {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-  }
-
-  .footer-list li {
-    display: block;
-    margin-bottom: 10px;
-  }
-
-  .footer-list strong {
-    display: block;
-    margin-bottom: 10px;
-  }
+}

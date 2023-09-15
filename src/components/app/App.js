@@ -12,15 +12,15 @@ import './App.scss';
 
 function App() {
   return (
-   <div className="app">
-    <Header/>
-    <Slider/>
-    <AboutCompany/>
-    <Tasks/>
-    <Portfolio/>
-    <FeedbackForm/>
-    <Footer/>
-   </div>
+    <div className="app">
+      <Header />
+      <Slider />
+      <AboutCompany />
+      <Tasks />
+      <Portfolio />
+      <FeedbackForm />
+      <Footer />
+    </div>
 
 
   );
