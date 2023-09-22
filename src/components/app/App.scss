@@ -9,6 +9,14 @@ html {
   text-decoration: none
 
 }
+
+body {
+  &.modal-open {
+    overflow: hidden;
+    margin-right: 16px;
+  }
+}
+
 html  a {
   text-decoration: none;
 
@@ -27,5 +35,9 @@ html  a {
   font-weight: 400;
   margin: 0 auto;
   text-decoration: none;
+
+
 }
+
+
 

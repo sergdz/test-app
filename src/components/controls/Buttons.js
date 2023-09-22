@@ -40,7 +40,7 @@ const Buttons = (props) => {
 
 
     return (
-        <button className={`app__${className}-button`} style={{ ...componentStyle, ...responsiveStyles }}>
+        <button  className={className ?`app__${className}-button` : ''} style={{ ...componentStyle, ...responsiveStyles }}>
             <div className="app__button-text">
                 {text}
             </div>

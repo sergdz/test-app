@@ -10,12 +10,12 @@ const Header = () => {
 
             <ul className='app__menu'>
                 <li className="app__menu_item">
-                    <a href="">
+                    <a href="/">
                         Главная
                     </a>
                 </li>
                 <li className="app__menu_item">
-                    <a className="app__menu_item-link" href="">
+                    <a className="app__menu_item-link" href="/gallery">
                         Галерея
                     </a>
                 </li>

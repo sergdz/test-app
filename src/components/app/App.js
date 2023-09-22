@@ -7,20 +7,39 @@ import FeedbackForm from '../feedbackForm/FeedbackForm';
 import Footer from '../footer/Footer';
 import Tasks from '../tasks/Tasks';
 
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Gallery from '../pages/gallery'
+
 import './App.scss';
+
+
 
 
 function App() {
   return (
-    <div className="app">
-      <Header />
-      <Slider />
-      <AboutCompany />
-      <Tasks />
-      <Portfolio />
-      <FeedbackForm />
-      <Footer />
-    </div>
+    <Router>
+      <div className="app">
+        <Header />
+
+        <Routes>
+          <Route path='/' element={
+            <>
+            <Slider />
+            <AboutCompany />
+            <Tasks />
+            <Portfolio />
+            <FeedbackForm />
+            </>
+
+          }>
+          </Route>
+          <Route path='/gallery' element={<Gallery/>} />
+        </Routes>
+
+        <Footer />
+
+      </div>
+    </Router>
 
 
   );
