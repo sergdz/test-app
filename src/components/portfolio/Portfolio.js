@@ -19,7 +19,7 @@ const Portfolio = () => {
                 </div>
                 <div className="app__portfolio-block-item">
                     <img src={imgPortfolioPage} alt="" />
-                    <PopUp />
+                    <PopUp title={'центр'}/>
 
                 </div>
 

@@ -1,7 +1,8 @@
 import Arrows from "./Arrows";
+import { Link } from "react-router-dom";
 
 const Buttons = (props) => {
-    const { color, bgColor, text, arrow, className } = props;
+    const { color, bgColor, text, arrow, className, link } = props;
 
     const componentStyle = {
         display: 'flex',
@@ -40,12 +41,12 @@ const Buttons = (props) => {
 
 
     return (
-        <button  className={className ?`app__${className}-button` : ''} style={{ ...componentStyle, ...responsiveStyles }}>
+        <Link to={link}  className={className ?`app__${className}-button` : ''} style={{ ...componentStyle, ...responsiveStyles }}>
             <div className="app__button-text">
                 {text}
             </div>
             <Arrows arrow={arrow} />
-        </button>
+        </Link>
     )
 }
 

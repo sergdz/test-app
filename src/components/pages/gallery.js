@@ -55,7 +55,7 @@ const Gallery = () => {
                 document.body.classList.add('modal-open')
                 setShowModal(state => !state)
                 break;
-            case 'app__modal-overlay':
+            case 'app__modal-overlay active':
                 setShowModal(false);
                 document.body.classList.remove('modal-open')
                 break;

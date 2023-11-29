@@ -1,0 +1,57 @@
+// styles.scss
+
+$header-bg-color: #333;
+$section-bg-color: #f4f4f4;
+$section-box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+$text-color: #333;
+$accent-color: #555;
+
+
+
+
+.contacts {
+    max-width: 800px;
+    margin: 2em auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: $section-box-shadow;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 8px;
+
+    &__group {
+        flex: 1;
+        margin-right: 20px;
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+
+    &__title {
+        color: $text-color;
+        font-size: 1.5em;
+        margin-bottom: 0.5em;
+    }
+
+    &__info {
+        color: $accent-color;
+        margin: 5px;
+    }
+
+    .address {
+        font-style: normal;
+
+        &__line {
+            margin: 5px;
+
+        }
+    }
+}
+
+#map {
+    margin: 0 auto;
+    width: 30%;
+    border-radius: 8px;
+    overflow: hidden;
+}

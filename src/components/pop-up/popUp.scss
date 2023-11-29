@@ -3,10 +3,18 @@
 .app {
     &__pop-up {
         position: absolute;
+        visibility:hidden;
         left: 0;
         top: 0;
         width: 100%;
         height: 100%;
+
+    &__pop-up :hover {
+        visibility:inherit;
+
+    }
+
+
         &-overlay {
             position: absolute;
             width: 100%;

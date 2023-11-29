@@ -3,12 +3,17 @@
 .app {
     &__slider {
         display: flex;
-
+        overflow: hidden;
         justify-content: space-evenly;
         margin-bottom: 123px;
 
         &-img {
+            display: flex;
+            width: 66%;
+            overflow: hidden;
             position: relative;
+
+
 
             & img {
                 width: 846px;
@@ -18,17 +23,6 @@
 
 
         }
-
-        &-img::before {
-            content: '';
-            position: absolute;
-            top: 69.2%;
-            right: 100%;
-            /*  */
-            border-top: 2px solid #F2F2F2;
-            width: 34.8%;
-        }
-
         &-button {
             position: absolute;
             left: 0;
@@ -66,8 +60,9 @@
         &-arrow {
             display: flex;
             justify-content: flex-start;
-            color:$textColor;
+            color: $textColor;
             cursor: pointer;
+
             &>div {
                 padding: 20px;
                 margin-right: 29px;
@@ -78,10 +73,11 @@
                 }
             }
         }
-        &-arrow > * {
+
+        &-arrow>* {
             display: flex;
             justify-content: flex-start;
-            color:$textColor;
+            color: $textColor;
 
         }
 
@@ -90,7 +86,7 @@
             font-size: 24px;
 
             &-item {
-                color:$textColor1;
+                color: $textColor1;
                 margin-right: 57px;
                 line-height: 48px;
             }
@@ -104,4 +100,3 @@
 
 
 }
-
